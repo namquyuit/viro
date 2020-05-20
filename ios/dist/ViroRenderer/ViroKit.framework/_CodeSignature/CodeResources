@@ -576,6 +576,10 @@
 		<data>
 		xANow4f3BTAIYyRZKZzhBsbdeuA=
 		</data>
+		<key>Headers/VROSoundDataGVR.h</key>
+		<data>
+		h2CzJbHk5rvIMdBnfUXFyWi38xM=
+		</data>
 		<key>Headers/VROSoundDelegate.h</key>
 		<data>
 		1flb6pGGgqGjYdyRYKi8zcGPN4c=
@@ -587,6 +591,10 @@
 		<key>Headers/VROSoundDelegateiOS.h</key>
 		<data>
 		2zcB12XWJONw2dE5p/nQGXDjIJ0=
+		</data>
+		<key>Headers/VROSoundGVR.h</key>
+		<data>
+		2E4UGnMO++Hec1FOtmj1uOhq/ko=
 		</data>
 		<key>Headers/VROSparseBitSet.h</key>
 		<data>
@@ -3520,6 +3528,17 @@
 			YVWwoHYYBd4OzZ3GfWPqCfgQ1+CFakkeklbN5NAVhkM=
 			</data>
 		</dict>
+		<key>Headers/VROSoundDataGVR.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h2CzJbHk5rvIMdBnfUXFyWi38xM=
+			</data>
+			<key>hash2</key>
+			<data>
+			6f4LgD3/6H+8EuYmau6eZe0UJNu/E0JE05uaeczFBPM=
+			</data>
+		</dict>
 		<key>Headers/VROSoundDelegate.h</key>
 		<dict>
 			<key>hash</key>
@@ -3551,6 +3570,17 @@
 			<key>hash2</key>
 			<data>
 			UtUv0nlNPjB7YyqRFTTbF2H57yv7cY0fPcerM2Xmd6I=
+			</data>
+		</dict>
+		<key>Headers/VROSoundGVR.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2E4UGnMO++Hec1FOtmj1uOhq/ko=
+			</data>
+			<key>hash2</key>
+			<data>
+			E9qaiTABaUKky/Q9odLsfX1DM5HuC2/IBDLH6sn64Zw=
 			</data>
 		</dict>
 		<key>Headers/VROSparseBitSet.h</key>

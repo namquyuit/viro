@@ -23,36 +23,36 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(preloadSounds:(NSDictionary *)soundDict
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject) {
-    for (id key in soundDict) {
-        NSString *path = [self parseImagePath:soundDict[key]];
-        if (path == nil) {
-            RCTLogError(@"Invalid preloaded sound path provided.");
-            return;
-        }
-        std::string cKeyString = std::string([((NSString *) key) UTF8String]);
-        std::string cPathString = std::string([((NSString *) path) UTF8String]);
-        std::shared_ptr<VROSoundDataGVR> data = VROSoundDataGVR::create(cPathString, VROResourceType::URL);
-        _preloadedSounds[cKeyString] = data;
-        
-        if (resolve) {
-            // Create a finish preloading callback with the promise for notifying Javascript with.
-            std::function<void(bool success, std::string msg)> onFinish = [self, cKeyString, resolve](bool success, std::string msg) {
-                if (_preloadCallbacks.find(cKeyString) != _preloadCallbacks.end()) {
-                    _preloadCallbacks.erase(cKeyString);
-                }
-                resolve(@{
-                          @"key" : @(cKeyString.c_str()),
-                          @"result" : @(success),
-                          @"msg" : @(msg.c_str()),
-                          });
-            };
-            
-            // Store a strong reference to the sound delegate callback for the given sound key.
-            std::shared_ptr<VROSoundDataDelegateiOS> callback = std::make_shared<VROSoundDataDelegateiOS>(onFinish);
-            _preloadCallbacks[cKeyString] = callback;
-            data->setDelegate(callback);
-        }
-    }
+//    for (id key in soundDict) {
+//        NSString *path = [self parseImagePath:soundDict[key]];
+//        if (path == nil) {
+//            RCTLogError(@"Invalid preloaded sound path provided.");
+//            return;
+//        }
+//        std::string cKeyString = std::string([((NSString *) key) UTF8String]);
+//        std::string cPathString = std::string([((NSString *) path) UTF8String]);
+//        std::shared_ptr<VROSoundDataGVR> data = VROSoundDataGVR::create(cPathString, VROResourceType::URL);
+//        _preloadedSounds[cKeyString] = data;
+//        
+//        if (resolve) {
+//            // Create a finish preloading callback with the promise for notifying Javascript with.
+//            std::function<void(bool success, std::string msg)> onFinish = [self, cKeyString, resolve](bool success, std::string msg) {
+//                if (_preloadCallbacks.find(cKeyString) != _preloadCallbacks.end()) {
+//                    _preloadCallbacks.erase(cKeyString);
+//                }
+//                resolve(@{
+//                          @"key" : @(cKeyString.c_str()),
+//                          @"result" : @(success),
+//                          @"msg" : @(msg.c_str()),
+//                          });
+//            };
+//            
+//            // Store a strong reference to the sound delegate callback for the given sound key.
+//            std::shared_ptr<VROSoundDataDelegateiOS> callback = std::make_shared<VROSoundDataDelegateiOS>(onFinish);
+//            _preloadCallbacks[cKeyString] = callback;
+//            data->setDelegate(callback);
+//        }
+//    }
 }
 
 - (NSString *)parseImagePath:(id)json {
