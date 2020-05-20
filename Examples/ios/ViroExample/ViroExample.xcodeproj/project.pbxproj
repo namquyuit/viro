@@ -32,7 +32,6 @@
 		13424D5620B4269E00C690CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE0D4261DF9DCFE0032AB99 /* LaunchScreen.storyboard */; };
 		136B0AEA20AA2FB800391021 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD9D8D1E09EBFF00A42870 /* libReact.a */; };
 		1385B2B520CA0A8200C3B6CE /* libViroReact_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1385B2A120CA098C00C3B6CE /* libViroReact_static_lib.a */; };
-		1385B2DA20CA38E500C3B6CE /* Pods_ViroExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9963AEFBC35CAFD7D48A8D1B /* Pods_ViroExample.framework */; };
 		8A1C312D211240B300F92429 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1C31272112407500F92429 /* libRNDeviceInfo.a */; };
 		8A1C312E211240BB00F92429 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1C31272112407500F92429 /* libRNDeviceInfo.a */; };
 		8A1C312F211240C300F92429 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1C31272112407500F92429 /* libRNDeviceInfo.a */; };
@@ -73,26 +72,40 @@
 			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
 			remoteInfo = "jsinspector-tvOS";
 		};
-		1358E52520A951DC00940D57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
-			remoteInfo = privatedata;
-		};
-		1358E52720A951DC00940D57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
-			remoteInfo = "privatedata-tvOS";
-		};
 		1385B2A020CA098C00C3B6CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BDD9D981E09F38900A42870 /* ViroReact.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1385B29C20CA091C00C3B6CE;
 			remoteInfo = ViroReact_static_lib;
+		};
+		1785460B2474E463005E3058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDEBC6D6214B3E7000DD5AC8;
+			remoteInfo = jsi;
+		};
+		1785460D2474E463005E3058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDEBC73B214B45A300DD5AC8;
+			remoteInfo = jsiexecutor;
+		};
+		1785460F2474E463005E3058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED296FB6214C9A0900B7C4FE;
+			remoteInfo = "jsi-tvOS";
+		};
+		178546112474E463005E3058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
+			remoteInfo = "jsiexecutor-tvOS";
 		};
 		8A1C31262112407500F92429 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -262,20 +275,6 @@
 			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
 			remoteInfo = "cxxreact-tvOS";
 		};
-		8BDDA0F31E57F28B00A42870 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
-			remoteInfo = jschelpers;
-		};
-		8BDDA0F51E57F28B00A42870 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D871E09EBFF00A42870 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
-			remoteInfo = "jschelpers-tvOS";
-		};
 		8BE0D42F1DF9DCFE0032AB99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BE0D40D1DF9DCFE0032AB99 /* Project object */;
@@ -362,7 +361,6 @@
 		8BE0D4AF1DFA1EE70032AB99 /* libReact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReact.a; path = "../../node_modules/react-native/React/build/Debug-iphoneos/libReact.a"; sourceTree = "<group>"; };
 		8BE0D4B01DFA1EE70032AB99 /* libViroReact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libViroReact.a; path = "../../../ios/build/Debug-iphoneos/libViroReact.a"; sourceTree = "<group>"; };
 		95BCD34C047577C6CABBCE9E /* Pods-ViroExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViroExample/Pods-ViroExample.release.xcconfig"; sourceTree = "<group>"; };
-		9963AEFBC35CAFD7D48A8D1B /* Pods_ViroExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViroExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12B834E3829DDDD1F3E9121 /* Pods-ViroExample_no_use_frameworks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViroExample_no_use_frameworks.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViroExample_no_use_frameworks/Pods-ViroExample_no_use_frameworks.release.xcconfig"; sourceTree = "<group>"; };
 		A6DE3F7920B5E93B00B25FA3 /* Pods_ViroExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ViroExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C445C0CE086C1E4ADC10B629 /* Pods_ViroExample_archive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViroExample_archive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,7 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1C312D211240B300F92429 /* libRNDeviceInfo.a in Frameworks */,
-				1385B2DA20CA38E500C3B6CE /* Pods_ViroExample.framework in Frameworks */,
 				1331B78020C9A97300D1C5F5 /* libReact.a in Frameworks */,
 				1385B2B520CA0A8200C3B6CE /* libViroReact_static_lib.a in Frameworks */,
 				1331B78220C9A97300D1C5F5 /* libRCTImage.a in Frameworks */,
@@ -521,16 +518,16 @@
 				8BDDA0EE1E57F28B00A42870 /* libyoga.a */,
 				8BDDA0F01E57F28B00A42870 /* libcxxreact.a */,
 				8BDDA0F21E57F28B00A42870 /* libcxxreact.a */,
-				8BDDA0F41E57F28B00A42870 /* libjschelpers.a */,
-				8BDDA0F61E57F28B00A42870 /* libjschelpers.a */,
 				1358E52220A951DC00940D57 /* libjsinspector.a */,
 				1358E52420A951DC00940D57 /* libjsinspector-tvOS.a */,
 				8ABC82CD1F54F7CC00217AB8 /* libthird-party.a */,
 				8ABC82CF1F54F7CC00217AB8 /* libthird-party.a */,
 				8ABC82D11F54F7CC00217AB8 /* libdouble-conversion.a */,
 				8ABC82D31F54F7CC00217AB8 /* libdouble-conversion.a */,
-				1358E52620A951DC00940D57 /* libprivatedata.a */,
-				1358E52820A951DC00940D57 /* libprivatedata-tvOS.a */,
+				1785460C2474E463005E3058 /* libjsi.a */,
+				1785460E2474E463005E3058 /* libjsiexecutor.a */,
+				178546102474E463005E3058 /* libjsi-tvOS.a */,
+				178546122474E463005E3058 /* libjsiexecutor-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -630,7 +627,6 @@
 				8BDB54B21DFFEE8900179AEF /* libRCTText.a */,
 				8BDB54B01DFFEE7E00179AEF /* libRCTNetwork.a */,
 				8BDB54AE1DFFEE7300179AEF /* libRCTImage.a */,
-				9963AEFBC35CAFD7D48A8D1B /* Pods_ViroExample.framework */,
 				C445C0CE086C1E4ADC10B629 /* Pods_ViroExample_archive.framework */,
 				766F9F120676EE2ACDCD4956 /* libPods-ViroExample_no_use_frameworks.a */,
 			);
@@ -774,6 +770,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -847,25 +844,39 @@
 			remoteRef = 1358E52320A951DC00940D57 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1358E52620A951DC00940D57 /* libprivatedata.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libprivatedata.a;
-			remoteRef = 1358E52520A951DC00940D57 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1358E52820A951DC00940D57 /* libprivatedata-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libprivatedata-tvOS.a";
-			remoteRef = 1358E52720A951DC00940D57 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		1385B2A120CA098C00C3B6CE /* libViroReact_static_lib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libViroReact_static_lib.a;
 			remoteRef = 1385B2A020CA098C00C3B6CE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1785460C2474E463005E3058 /* libjsi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsi.a;
+			remoteRef = 1785460B2474E463005E3058 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1785460E2474E463005E3058 /* libjsiexecutor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsiexecutor.a;
+			remoteRef = 1785460D2474E463005E3058 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		178546102474E463005E3058 /* libjsi-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsi-tvOS.a";
+			remoteRef = 1785460F2474E463005E3058 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		178546122474E463005E3058 /* libjsiexecutor-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsiexecutor-tvOS.a";
+			remoteRef = 178546112474E463005E3058 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		8A1C31272112407500F92429 /* libRNDeviceInfo.a */ = {
@@ -1036,20 +1047,6 @@
 			remoteRef = 8BDDA0F11E57F28B00A42870 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8BDDA0F41E57F28B00A42870 /* libjschelpers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjschelpers.a;
-			remoteRef = 8BDDA0F31E57F28B00A42870 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8BDDA0F61E57F28B00A42870 /* libjschelpers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjschelpers.a;
-			remoteRef = 8BDDA0F51E57F28B00A42870 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1217,7 +1214,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-resources.sh",
 				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
 				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
 				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
@@ -1234,7 +1231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3601AE3592BC6F4BF38B7204 /* [CP] Embed Pods Frameworks */ = {
@@ -1243,7 +1240,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample_no_use_frameworks/Pods-ViroExample_no_use_frameworks-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViroExample_no_use_frameworks/Pods-ViroExample_no_use_frameworks-frameworks.sh",
 				"${PODS_ROOT}/../../../../ios/dist/ViroRenderer/static_lib/ViroKit_static_lib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1252,7 +1249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample_no_use_frameworks/Pods-ViroExample_no_use_frameworks-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViroExample_no_use_frameworks/Pods-ViroExample_no_use_frameworks-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3F40BDC48FB6296CC4E1E2E3 /* [CP] Copy Pods Resources */ = {
@@ -1261,7 +1258,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample/Pods-ViroExample-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViroExample/Pods-ViroExample-resources.sh",
 				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
 				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
 				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
@@ -1278,7 +1275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample/Pods-ViroExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViroExample/Pods-ViroExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56ECCCE0B85392C586D819BA /* [CP] Check Pods Manifest.lock */ = {
@@ -1305,7 +1302,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample/Pods-ViroExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViroExample/Pods-ViroExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -1322,7 +1319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample/Pods-ViroExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViroExample/Pods-ViroExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BDD9E001E44794F00A42870 /* Copy Ngrok Address to Build */ = {
@@ -1358,7 +1355,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -1375,7 +1372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViroExample_archive/Pods-ViroExample_archive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D57E7E8B81C1F880CA67DF7E /* [CP] Check Pods Manifest.lock */ = {
@@ -1475,7 +1472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = 8Y99FD5GNY;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../ios/dist/ViroRenderer/**",
@@ -1506,7 +1503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = 8Y99FD5GNY;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../ios/dist/ViroRenderer/**",
@@ -1538,7 +1535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = Futurify;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../ios/dist/ViroRenderer/**",
@@ -1569,7 +1566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = Futurify;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../ios/dist/ViroRenderer/**",
@@ -1687,7 +1684,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = Futurify;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../ios/dist/ViroRenderer/**",
@@ -1718,7 +1715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 13;
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = Futurify;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../ios/dist/ViroRenderer/**",
@@ -1771,7 +1768,7 @@
 		8BE0D4491DF9DCFE0032AB99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = Futurify;
 				INFOPLIST_FILE = ViroExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = viro.ViroExampleUITests;
@@ -1783,7 +1780,7 @@
 		8BE0D44A1DF9DCFE0032AB99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = ***REMOVED***;
+				DEVELOPMENT_TEAM = Futurify;
 				INFOPLIST_FILE = ViroExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = viro.ViroExampleUITests;

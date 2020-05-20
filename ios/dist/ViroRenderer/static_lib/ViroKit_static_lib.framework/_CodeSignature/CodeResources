@@ -4297,7 +4297,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3/wNyCkqhUWdF9vPxyoEj+8prBU=
+		9jjBbtstFmsgIAHfIcDdHx8MbZg=
 		</data>
 		<key>MaterialRobotoFontLoader.bundle/Roboto-Black.ttf</key>
 		<data>
@@ -4389,7 +4389,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		rZLoP9j16r0F4tqPBrfTZIDAITQ=
+		5pUpUqmRGe5ZNYoHDfv30b0z0HU=
 		</data>
 		<key>equirect_to_cube_fsh.glsl</key>
 		<data>
@@ -14084,11 +14084,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rZLoP9j16r0F4tqPBrfTZIDAITQ=
+			5pUpUqmRGe5ZNYoHDfv30b0z0HU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4WLWU6Xox6GMymt37fR3AsH2iGSKr/POJuGoCveOHp0=
+			GD7gQkSy02aV/76j4YckQhWEQFM/p8WXLf6NeB0CRAM=
 			</data>
 		</dict>
 		<key>equirect_to_cube_fsh.glsl</key>
@@ -14303,7 +14303,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -14334,24 +14334,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -14387,13 +14375,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

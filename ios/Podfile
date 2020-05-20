@@ -1,4 +1,22 @@
 target 'ViroReact' do
+  rn_path = '../Examples/node_modules/react-native'
+  pod 'yoga', path: "#{rn_path}/ReactCommon/yoga"
+  pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+  ]
+  pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
 end
 
 target 'ViroReact_static_lib' do
